@@ -17,5 +17,7 @@
 - (8) String to Integer (atoi)
 - (65) Valid Number
 - (13) Roman to Integer
+- (12) Integer to Roman
+- (273) Integer to English Words
 
  
