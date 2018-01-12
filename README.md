@@ -12,8 +12,11 @@
 
 ## String Manipulation
 - (7) Reverse Integer
+- (344) Reverse String
+- (541) Reverse String II
 - (151) Reverse Words in a String
 - (186) Reverse Words in a String II
+- (557) Reverse Words in a String III
 - (8) String to Integer (atoi)
 - (65) Valid Number
 - (13) Roman to Integer
