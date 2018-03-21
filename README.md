@@ -22,5 +22,49 @@
 - (13) Roman to Integer
 - (12) Integer to Roman
 - (273) Integer to English Words
+- (6) ZigZag Conversion
+- (14) Longest Common Prefix
+- (3) Longest Substring Without Repeating Char
+- (20) Valid Parentheses 
+- (5) Longest Palindromic Substring
+- (38) Count and Say
+- (10) Regular Expression Matching
+- (44) Wildcard Matching
 
- 
+## Array
+- (621) Task Scheduler
+- (283) Move Zeros
+- (121) Best Time to Buy and Sell Stock
+- (53) Maximum Subarray
+- (152) Maximum Product Subarray
+- (697) Degree of an Array
+- (189) Rotate Array
+- (73) Set Matrix Zeroes
+
+## Dynamic Programming
+- (198) House Robber
+
+## Hash Table
+- (1) Two Sum
+- (535) Encode and Decode TinyURL
+- (387) First Unique Character in a String
+
+## Priority Queue
+- (767) Reorganize String
+- (358) Rearrange String k Distance Apart
+
+## Bit Manipulation
+- (461) Hamming Distance
+
+## Design
+- (146) LRU Cache
+    - Lease Recently Used (LRU) cache
+    
+## Linked List
+- (206) Reverse Linked List
+- (2) Add Two Numbers
+- (21) Merge Two Sorted Lists
+
+## Backtracing
+- (89) Gray Code
+- 
