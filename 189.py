@@ -8,4 +8,5 @@ class Solution:
         if not nums: return
         n = len(nums)
         k = k % n
-        nums[:] = nums[n-k:] + nums[:n-k]
+        nums[:] = nums[-k:] + nums[:-k]
+        # nums[:] = nums[n-k:] + nums[:n-k]

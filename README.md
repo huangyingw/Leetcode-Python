@@ -40,18 +40,27 @@
 - (697) Degree of an Array
 - (189) Rotate Array
 - (73) Set Matrix Zeroes
+- (119) Pascal's Triangle II
+- (238) Product of Array Except Self
+- (243) Shortest Word Distance
+
+## Stack
+- (155) Min Stack
 
 ## Dynamic Programming
 - (198) House Robber
+- (746) Min Cost Climbing Stairs
 
 ## Hash Table
 - (1) Two Sum
 - (535) Encode and Decode TinyURL
 - (387) First Unique Character in a String
+- (149) Max Points on a Line
 
 ## Priority Queue
 - (767) Reorganize String
 - (358) Rearrange String k Distance Apart
+- (23) Merge k Sorted Lists
 
 ## Bit Manipulation
 - (461) Hamming Distance
@@ -64,7 +73,25 @@
 - (206) Reverse Linked List
 - (2) Add Two Numbers
 - (21) Merge Two Sorted Lists
+- (141) Linked List Cycle
 
-## Backtracing
+## Trick
 - (89) Gray Code
-- 
+- (771) Jewels and Stones
+
+## Binary Search
+- (240) Search a 2D Matrix II
+- (50) Pow(x, n)
+
+## Backtracking ang BFS
+- (126) Word Ladder II
+
+# BFS
+- (127) Word Ladder
+- (102) Binary Tree Level Order Traversal
+
+## DFS
+- (104) Maximum Depth of Binary Tree
+
+## Sort
+- (56) Merge Intervals
