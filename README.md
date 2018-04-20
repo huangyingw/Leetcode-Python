@@ -48,11 +48,13 @@
 - (155) Min Stack
 
 ## Dynamic Programming
+- (139) Word Break
 - (198) House Robber
 - (746) Min Cost Climbing Stairs
 
 ## Hash Table
 - (1) Two Sum
+- (49) Group Anagrams
 - (535) Encode and Decode TinyURL
 - (387) First Unique Character in a String
 - (149) Max Points on a Line
@@ -64,6 +66,7 @@
 
 ## Bit Manipulation
 - (461) Hamming Distance
+- (78) Subsets
 
 ## Design
 - (146) LRU Cache
@@ -74,10 +77,14 @@
 - (2) Add Two Numbers
 - (21) Merge Two Sorted Lists
 - (141) Linked List Cycle
+- (234) Palindrome Linked List
 
 ## Trick
 - (89) Gray Code
 - (771) Jewels and Stones
+
+## Math
+- (204) Count Primes
 
 ## Binary Search
 - (240) Search a 2D Matrix II
@@ -89,9 +96,17 @@
 # BFS
 - (127) Word Ladder
 - (102) Binary Tree Level Order Traversal
+- (17) Letter Combination of a Phone Number
 
 ## DFS
 - (104) Maximum Depth of Binary Tree
+- (200) Number of Islands
+- (130) Surrounded Regions
+- (78) Subsets
 
 ## Sort
 - (56) Merge Intervals
+
+## Two Pointers
+- (42) Trapping Rain Water
+- (167) Two Sum II - Input array is sorted
