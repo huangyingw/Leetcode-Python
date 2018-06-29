@@ -43,14 +43,20 @@
 - (119) Pascal's Triangle II
 - (238) Product of Array Except Self
 - (243) Shortest Word Distance
+- (661) Image Smoother
 
 ## Stack
 - (155) Min Stack
 
 ## Dynamic Programming
+- (70) Climbing Stairs
 - (139) Word Break
 - (198) House Robber
+- (256) Paint House
+- (276) Paint Fence
+- (413) Arithmetic Slices
 - (746) Min Cost Climbing Stairs
+- (750) Number Of Corner Rectangles
 
 ## Hash Table
 - (1) Two Sum
@@ -65,12 +71,15 @@
 - (23) Merge k Sorted Lists
 
 ## Bit Manipulation
-- (461) Hamming Distance
 - (78) Subsets
+- (338) Counting Bits
+- (461) Hamming Distance
+- (762) Prime Number of Set Bits in Binary Representation
 
 ## Design
 - (146) LRU Cache
     - Lease Recently Used (LRU) cache
+- (380) Insert Delete GetRandom O(1)
     
 ## Linked List
 - (206) Reverse Linked List
@@ -103,6 +112,15 @@
 - (200) Number of Islands
 - (130) Surrounded Regions
 - (78) Subsets
+- (98) Validate Binary Search Tree
+
+## Tree
+- (94) Binary Tree Inorder Traversal
+- (98) Validate Binary Search Tree
+- (144) Binary Tree Preorder Traversal
+- (145) Binary Tree Postorder Traversal
+- (538) Convert BST to Greater Tree
+- (606) Construct String from Binary Tree
 
 ## Sort
 - (56) Merge Intervals
@@ -110,3 +128,16 @@
 ## Two Pointers
 - (42) Trapping Rain Water
 - (167) Two Sum II - Input array is sorted
+
+## Deque
+- (239) Sliding Window Maximum
+
+## Quick Select
+- (215) Kth Largest Element in an Array
+
+## Dictionary
+- (819) Most Common Word
+
+## Greedy
+- (763) Partition Labels
+
