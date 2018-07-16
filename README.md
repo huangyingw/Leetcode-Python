@@ -30,6 +30,7 @@
 - (38) Count and Say
 - (10) Regular Expression Matching
 - (44) Wildcard Matching
+- (681) Next Closest Time
 
 ## Array
 - (621) Task Scheduler
@@ -50,11 +51,19 @@
 
 ## Dynamic Programming
 - (70) Climbing Stairs
+- (96) Unique Binary Search Trees
+- (122) Best Time to Buy and Sell Stock II
+- (123) Best Time to Buy and Sell Stock III
 - (139) Word Break
+- (188) Best Time to Buy and Sell Stock IV
 - (198) House Robber
 - (256) Paint House
 - (276) Paint Fence
 - (413) Arithmetic Slices
+- (647) Palindromic Substrings
+- (651) 4 Keys Keyboard
+- (712) Minimum ASCII Delete Sum for Two Strings
+- (714) Best Time to Buy and Sell Stock with Transaction Fee
 - (746) Min Cost Climbing Stairs
 - (750) Number Of Corner Rectangles
 
@@ -113,12 +122,18 @@
 - (130) Surrounded Regions
 - (78) Subsets
 - (98) Validate Binary Search Tree
+- (298) Binary Tree Longest Consecutive Sequence
 
 ## Tree
 - (94) Binary Tree Inorder Traversal
+- (96) Unique Binary Search Trees
 - (98) Validate Binary Search Tree
 - (144) Binary Tree Preorder Traversal
 - (145) Binary Tree Postorder Traversal
+- (270) Closest Binary Search Tree Value
+- (285) Inorder Successor in BST
+- (298) Binary Tree Longest Consecutive Sequence
+- (549) Binary Tree Longest Consecutive Sequence II
 - (538) Convert BST to Greater Tree
 - (606) Construct String from Binary Tree
 
@@ -131,6 +146,7 @@
 
 ## Deque
 - (239) Sliding Window Maximum
+- (346) Moving Average from Data Stream
 
 ## Quick Select
 - (215) Kth Largest Element in an Array
@@ -139,5 +155,6 @@
 - (819) Most Common Word
 
 ## Greedy
+- (646) Maximum Length of Pair Chain
 - (763) Partition Labels
 
