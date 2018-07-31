@@ -4,14 +4,20 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        result = []
-        for i in range(1 << len(nums)):
-            tmp = []
-            for j in range(len(nums)):
-                if i >> j & 1:
-                    tmp.append(nums[j])
-            result.append(tmp)
+        result = [[]]
+        for num in nums:
+            ret = [temp + [num] for temp in result]
+            result.extend(ret)
         return result
+
+        # result = []
+        # for i in range(1 << len(nums)):
+        #     tmp = []
+        #     for j in range(len(nums)):
+        #         if i >> j & 1:
+        #             tmp.append(nums[j])
+        #     result.append(tmp)
+        # return result
 
 
 #     def subsets(self, nums):
