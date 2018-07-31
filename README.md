@@ -115,8 +115,7 @@
 - (240) Search a 2D Matrix II
 - (50) Pow(x, n)
 
-
-# BFS
+## BFS
 - (116) Populating Next Right Pointers in Each Node
 - (117) Populating Next Right Pointers in Each Node II
 - (127) Word Ladder
@@ -130,7 +129,6 @@
 - (78) Subsets
 - (98) Validate Binary Search Tree
 - (298) Binary Tree Longest Consecutive Sequence
-
 
 ## Sort
 - (56) Merge Intervals
