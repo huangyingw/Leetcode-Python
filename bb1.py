@@ -1,3 +1,5 @@
+
+
 def findSum(N, S):
     result = []
     find(N, S, [], result)

@@ -30,3 +30,34 @@ class Solution:
                 front, back = back, front
             wordList -= front
         return 0
+
+
+# class Solution:
+#     def ladderLength(self, beginWord, endWord, wordList):
+#         """
+#         :type beginWord: str
+#         :type endWord: str
+#         :type wordList: List[str]
+#         :rtype: int
+#         """
+#         wordList = set(wordList)
+#         if endWord not in wordList:
+#             return 0
+#         queue = set([beginWord])
+#         wordList.discard(beginWord)
+#         result = 1
+#         while queue:
+#             new_queue = set()
+#             for word in queue:
+#                 for i in range(len(word)):
+#                     for c in string.ascii_lowercase:
+#                         new_word = word[:i] + c + word[i+1:]
+#                         if new_word == endWord:
+#                             return result+1
+#                         else:
+#                             if new_word in wordList:
+#                                 new_queue.add(new_word)
+#             result += 1
+#             queue = new_queue
+#             wordList -= new_queue
+#         return 0

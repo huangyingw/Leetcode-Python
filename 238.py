@@ -4,13 +4,13 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        output = []
+        result = []
         product = 1
         for i in nums:
-            output.append(product)
+            result.append(product)
             product *= i
         product = 1
-        for i in range(len(nums)-1, -1, -1):
-            output[i] *= product
-            product *= nums[i]
-        return output
+        for j in range(len(nums)-1, -1, -1):
+            result[j] *= product
+            product *= nums[j]
+        return result
