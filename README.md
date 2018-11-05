@@ -5,9 +5,21 @@
 ## Sort
 - (75) Sort Colors
 
+## Two Pointers
+- (15) 3Sum
+- (16) 3Sum Closest
+- (18) 4Sum
+- (259) 3Sum Smaller
+
+
 ## Two pointers + Hash Table
 - (30) Substring with Concatenation of All Words
 - (76) Minimum Window Substring
+
+
+## Two Pointers + LinkedList
+- (19) Remove Nth Node From End of List
+
 
 ## BFS + Tree
 - (111) Minimum Depth of Binary Tree
@@ -24,6 +36,9 @@
 - (90) Subsets II
 
 ## Backtracking + DFS
+- (37) Sudoku Solver
+- (39) Combination Sum
+- (40) Combination Sum II
 - (79) Word Search
 - (212) Word Search II
 - (126) Word Ladder II
@@ -123,6 +138,8 @@
 - (380) Insert Delete GetRandom O(1)
     
 ## Linked List
+- (24) Swap Nodes in Pairs
+- (25) Reverse Nodes in k-Group
 - (206) Reverse Linked List
 - (92) Reverse Linked List II
 - (2) Add Two Numbers
@@ -146,6 +163,7 @@
 ## Binary Search
 - (4) Median of Two Sorted Arrays
 - (29) Divide Two Integers
+- (35) Search Insert Position
 - (69) Sqrt(x)
 - (33) Search in Rotated Sorted Array
 - (81) Search in Rotated Sorted Array II
@@ -163,6 +181,7 @@
 - (17) Letter Combination of a Phone Number
 
 ## DFS
+- (22) Generate Parentheses
 - (104) Maximum Depth of Binary Tree
 - (200) Number of Islands
 - (130) Surrounded Regions
@@ -179,6 +198,7 @@
 - (252) Meeting Rooms
 
 ## Two Pointers
+- (11) Container With Most Water
 - (42) Trapping Rain Water
 - (209) Minimum Size Subarray Sum
 - (167) Two Sum II - Input array is sorted
@@ -188,6 +208,7 @@
 - (215) Kth Largest Element in an Ar
 
 ## Greedy
+- (45) Jump Game II
 - (316) Remove Duplicate Letter
 - (321) Create Maximum Number
 - (646) Maximum Length of Pair Chain
@@ -254,6 +275,8 @@
 ## Array
 - (26) Remove Duplicates from Sorted Array
 - (80) Remove Duplicates from Sorted Array II
+- (41) First Missing Positive
+- (27) Remove Element
 - (31) Next Permutation
 - (88) Merge Sorted Array
 - (621) Task Scheduler
@@ -273,5 +296,6 @@
 
 ## String
 - (28) Implement strStr()
+- (58) Length of Last Word
 - (125) Valid Palindrome
 - (161) One Edit Distance
