@@ -5,8 +5,9 @@ class Solution:
         :type needle: str
         :rtype: int
         """
-        h, n = len(haystack), len(needle)
-        for i in range(h-n+1):
+        if not needle or len(needle) == 0: return 0
+        m, n = len(haystack), len(needle)
+        for i in range(m-n+1):
             if haystack[i:i+n] == needle:
                 return i
         return -1

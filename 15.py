@@ -11,7 +11,7 @@ class Solution(object):
                 continue
             left, right = i+1, len(nums) - 1
             while left < right:
-                if  nums[i] + nums[left] + nums[right] == 0:
+                if nums[i] + nums[left] + nums[right] == 0:
                     result.append([nums[i], nums[left], nums[right]])
                     while left < right and nums[left] == nums[left+1]:
                         left += 1
