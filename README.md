@@ -2,6 +2,10 @@
 
 # Algorithm
 
+## Morris Traversal
+- (99) Recover Binary Search Tree
+
+
 ## Sort
 - (75) Sort Colors
 
@@ -11,35 +15,42 @@
 - (18) 4Sum
 - (259) 3Sum Smaller
 
-
 ## Two pointers + Hash Table
 - (30) Substring with Concatenation of All Words
 - (76) Minimum Window Substring
 
-
 ## Two Pointers + LinkedList
 - (19) Remove Nth Node From End of List
-
+- (61) Rotate List
 
 ## BFS + Tree
 - (111) Minimum Depth of Binary Tree
 - (102) Binary Tree Level Order Traversal
 - (103) Binary Tree Zigzag Level Order Traversal
+- (107) Binary Tree Level Order Traversal II
 - (314) Binary Tree Vertical Order Traversal
 - (637) Average of Levels in Binary Tree
 - (173) Binary Search Tree Iterator
 
 ## DFS + Tree
+- (108) Convert Sorted Array to Binary Search Tree
+- (109) Convert Sorted List to Binary Search Tree
 - (257) Binary Tree Paths
 
 ## Backtracking
+- (46) Permutations
+- (47) Permutations II
+- (77) Combinations
 - (90) Subsets II
 
 ## Backtracking + DFS
 - (37) Sudoku Solver
 - (39) Combination Sum
 - (40) Combination Sum II
+- (51) N-Queens
+- (52) N-Queens II
 - (79) Word Search
+- (131) Palindrome Partitioning
 - (212) Word Search II
 - (126) Word Ladder II
 
@@ -90,16 +101,26 @@
 ## Stack
 - (32) Longest Valid Parentheses
 - (71) Simplify Path
+- (84) Largest Rectangle in Histogram
 - (155) Min Stack
 - (224) Basic Calculator
 
 ## Dynamic Programming
+- (62) Unique Paths
+- (63) Unique Paths II
+- (64) Minimum Path Sum
 - (70) Climbing Stairs
+- (72) Edit Distance
+- (87) Scramble String
 - (91) Decode Ways
 - (639) Decode Ways II
+- (97) Interleaving String
 - (96) Unique Binary Search Trees
+- (115) Distinct Subsequences
+- (120) Triangle
 - (122) Best Time to Buy and Sell Stock II
 - (123) Best Time to Buy and Sell Stock III
+- (132) Palindrome Partitioning II
 - (139) Word Break
 - (188) Best Time to Buy and Sell Stock IV
 - (198) House Robber
@@ -144,8 +165,12 @@
 - (92) Reverse Linked List II
 - (2) Add Two Numbers
 - (21) Merge Two Sorted Lists
+- (82) Remove Duplicates from Sorted List II
+- (83) Remove Duplicates from Sorted List
+- (86) Partition List
 - (141) Linked List Cycle
 - (234) Palindrome Linked List
+- (109) Convert Sorted List to Binary Search Tree
 
 ## Trick
 - (89) Gray Code
@@ -155,16 +180,21 @@
 
 ## Math
 - (43) Multiply Strings
+- (60) Permutation Sequence
 - (168) Excel Sheet Column Title
 - (171) Excel Sheet Column Number
 - (204) Count Primes
 - (268) Missing Number
+
+## Math + Array
+- (66) Plus One
 
 ## Binary Search
 - (4) Median of Two Sorted Arrays
 - (29) Divide Two Integers
 - (35) Search Insert Position
 - (69) Sqrt(x)
+- (74) Search a 2D Matrix
 - (33) Search in Rotated Sorted Array
 - (81) Search in Rotated Sorted Array II
 - (153) Find Minimum in Rotated Sorted Array
@@ -182,6 +212,7 @@
 
 ## DFS
 - (22) Generate Parentheses
+- (93) Restore IP Address
 - (104) Maximum Depth of Binary Tree
 - (200) Number of Islands
 - (130) Surrounded Regions
@@ -209,6 +240,7 @@
 
 ## Greedy
 - (45) Jump Game II
+- (55) Jump Game
 - (316) Remove Duplicate Letter
 - (321) Create Maximum Number
 - (646) Maximum Length of Pair Chain
@@ -259,6 +291,16 @@
 - (95) Unique Binary Search Trees II
 - (96) Unique Binary Search Trees
 - (98) Validate Binary Search Tree
+- (100) Same Tree
+- (101) Symmetric Tree
+- (105) Construct Binary Tree from Preorder and Inorder Traversal
+- (106) Construct Binary Tree from Inorder and Postorder Traversal
+- (110) Balanced Binary Tree
+- (112) Path Sum
+- (113) Path Sum II
+- (114) Flatten Binary Tree to Linked List
+- (124) Binary Tree Maximum Path Sum
+- (129) Sum Root to Leaf Numbers
 - (144) Binary Tree Preorder Traversal
 - (145) Binary Tree Postorder Traversal
 - (270) Closest Binary Search Tree Value
@@ -275,9 +317,13 @@
 ## Array
 - (26) Remove Duplicates from Sorted Array
 - (80) Remove Duplicates from Sorted Array II
-- (41) First Missing Positive
 - (27) Remove Element
 - (31) Next Permutation
+- (41) First Missing Positive
+- (48) Rotate Image
+- (54) Spiral Matrix
+- (59) Spiral Matrix II
+- (57) Insert Interval
 - (88) Merge Sorted Array
 - (621) Task Scheduler
 - (283) Move Zeros
@@ -287,6 +333,7 @@
 - (697) Degree of an Array
 - (189) Rotate Array
 - (73) Set Matrix Zeroes
+- (118) Pascal's Triangle
 - (119) Pascal's Triangle II
 - (238) Product of Array Except Self
 - (243) Shortest Word Distance
@@ -297,5 +344,6 @@
 ## String
 - (28) Implement strStr()
 - (58) Length of Last Word
+- (68) Text Justification
 - (125) Valid Palindrome
 - (161) One Edit Distance
