@@ -156,6 +156,7 @@
 ## Design
 - (146) LRU Cache
     - Lease Recently Used (LRU) cache
+- (460) LFU Cache
 - (380) Insert Delete GetRandom O(1)
     
 ## Linked List
@@ -164,6 +165,7 @@
 - (206) Reverse Linked List
 - (92) Reverse Linked List II
 - (2) Add Two Numbers
+- (445) Add Two Numbers II
 - (21) Merge Two Sorted Lists
 - (82) Remove Duplicates from Sorted List II
 - (83) Remove Duplicates from Sorted List
@@ -185,6 +187,7 @@
 - (171) Excel Sheet Column Number
 - (204) Count Primes
 - (268) Missing Number
+- (829) Consecutive Numbers Sum
 
 ## Math + Array
 - (66) Plus One
@@ -209,6 +212,7 @@
 - (117) Populating Next Right Pointers in Each Node II
 - (127) Word Ladder
 - (17) Letter Combination of a Phone Number
+- (286) Walls and Gates
 
 ## DFS
 - (22) Generate Parentheses
@@ -241,6 +245,8 @@
 ## Greedy
 - (45) Jump Game II
 - (55) Jump Game
+- (134) Gas Station
+- (135) Candy
 - (316) Remove Duplicate Letter
 - (321) Create Maximum Number
 - (646) Maximum Length of Pair Chain
@@ -275,12 +281,17 @@
 - (149) Max Points on a Line
 - (819) Most Common Word
 
+## Sliding Window
+- (159) Longest Substring with At Most Two Distinct Characters
+- (904) Fruit Into Basket
+
 ## Trie
 - (208) Implement Trie (Prefix Tree)
 
 ## Min Heap
 - (218) The Skyline Problem
 - (253) Meeting Rooms II
+- (407) Trapping Rain Water II
 
 ## Deque
 - (239) Sliding Window Maximum
@@ -347,3 +358,4 @@
 - (68) Text Justification
 - (125) Valid Palindrome
 - (161) One Edit Distance
+- (929) Unique Email Addresses

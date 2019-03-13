@@ -22,5 +22,6 @@ class Solution:
                 carry += l2.val
                 l2 = l2.next
             carry, value = divmod(carry, 10)
-            current.next = current = ListNode(value)
+            current.next = ListNode(value)
+            current = current.next
         return dummy.next
