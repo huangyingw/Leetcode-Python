@@ -5,15 +5,17 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution:
-    # def isValidBST(self, root, floor=float('-inf'), ceiling=float('inf')):
-    #     if not root:
-    #         return True
-    #     if root.val <= floor or root.val >= ceiling:
-    #         return False
-    #     return self.isValidBST(root.left, floor, root.val) and self.isValidBST(root.right, root.val, ceiling)
 
-    
+# class Solution:
+#     def isValidBST(self, root: TreeNode) -> bool:
+#         return self.isValid(root, float('-inf'), float('inf'))
+
+#     def isValid(self, root, lower, upper):
+#         if not root: return True
+#         if root.val <= lower or root.val >= upper: return False
+#         return self.isValid(root.left, lower, root.val) and self.isValid(root.right, root.val, upper)
+
+class Solution:
     def isValidBST(self, root):
         stack, prev, curr = [], None, root
         while stack or curr:

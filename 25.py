@@ -15,7 +15,6 @@ class Solution:
         dummy = jump = ListNode(0)
         dummy.next = head
         l, r = head, head
-        count = 0
         while True:
             count = 0
             while r and count < k:

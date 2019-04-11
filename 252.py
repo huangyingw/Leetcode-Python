@@ -4,6 +4,7 @@
 #         self.start = s
 #         self.end = e
 
+
 class Solution:
     def canAttendMeetings(self, intervals):
         """
@@ -16,4 +17,4 @@ class Solution:
                 return False
             else:
                 overlap.append(interval)
-        return len(overlap) == len(intervals)
+        return True

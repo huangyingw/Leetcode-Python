@@ -1,10 +1,4 @@
-# Leetcode-Python
-
 # Algorithm
-
-## Morris Traversal
-- (99) Recover Binary Search Tree
-
 
 ## Sort
 - (75) Sort Colors
@@ -13,7 +7,10 @@
 - (15) 3Sum
 - (16) 3Sum Closest
 - (18) 4Sum
+- (159) Longest Substring with At Most Two Distinct Characters
+- (340) Longest Substring with At Most K Distinct Characters
 - (259) 3Sum Smaller
+- (904) Fruit Into Basket
 
 ## Two pointers + Hash Table
 - (30) Substring with Concatenation of All Words
@@ -23,6 +20,10 @@
 - (19) Remove Nth Node From End of List
 - (61) Rotate List
 
+## Graph
+- (332) Reconstruct Itinerary
+- (399) Evaluate Division
+
 ## BFS + Tree
 - (111) Minimum Depth of Binary Tree
 - (102) Binary Tree Level Order Traversal
@@ -30,11 +31,11 @@
 - (107) Binary Tree Level Order Traversal II
 - (314) Binary Tree Vertical Order Traversal
 - (637) Average of Levels in Binary Tree
-- (173) Binary Search Tree Iterator
 
 ## DFS + Tree
 - (108) Convert Sorted Array to Binary Search Tree
 - (109) Convert Sorted List to Binary Search Tree
+- (173) Binary Search Tree Iterator
 - (257) Binary Tree Paths
 
 ## Backtracking
@@ -65,6 +66,7 @@
 - (158) Read N Characters Given Read4 II - Call multiple times
 - (251) Flatten 2D Vector
 - (341) Flatten Nested List Iterator
+- (348) Design Tic-Tac-Toe
 
 ## Range Sum
 - (307) Range Sum Query - Mutable
@@ -76,36 +78,18 @@
   - Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
 - (308) Range Sum Query 2D - Mutable
 
-## String Manipulation
-- (7) Reverse Integer
-- (344) Reverse String
-- (541) Reverse String II
-- (151) Reverse Words in a String
-- (186) Reverse Words in a String II
-- (557) Reverse Words in a String III
-- (8) String to Integer (atoi)
-- (65) Valid Number
-- (13) Roman to Integer
-- (12) Integer to Roman
-- (273) Integer to English Words
-- (6) ZigZag Conversion
-- (14) Longest Common Prefix
-- (3) Longest Substring Without Repeating Char
-- (20) Valid Parentheses 
-- (5) Longest Palindromic Substring
-- (38) Count and Say
-- (10) Regular Expression Matching
-- (44) Wildcard Matching
-- (681) Next Closest Time
-
 ## Stack
 - (32) Longest Valid Parentheses
 - (71) Simplify Path
 - (84) Largest Rectangle in Histogram
 - (155) Min Stack
 - (224) Basic Calculator
+- (394) Decode String
+- (735) Asteroid Collision
+- (772) Basic Caculator III
 
 ## Dynamic Programming
+- (22) Generate Parentheses
 - (62) Unique Paths
 - (63) Unique Paths II
 - (64) Minimum Path Sum
@@ -127,6 +111,7 @@
 - (256) Paint House
 - (265) Paint House II
 - (276) Paint Fence
+- (322) Coin Change
 - (377) Combination Sum IV
 - (413) Arithmetic Slices
 - (647) Palindromic Substrings
@@ -148,10 +133,17 @@
 
 ## Bit Manipulation
 - (67) Add Binary
+- (289) Game of Life
 - (338) Counting Bits
 - (461) Hamming Distance
 - (477) Total Hamming Distance
 - (762) Prime Number of Set Bits in Binary Representation
+
+## Morris Traversal
+- (99) Recover Binary Search Tree
+
+## Minimax
+- (843) Guess the Word
 
 ## Design
 - (146) LRU Cache
@@ -206,6 +198,7 @@
 - (240) Search a 2D Matrix II
 - (278) First Bad Version
 - (50) Pow(x, n)
+- (528) Random Pick with Weight
 
 ## BFS
 - (116) Populating Next Right Pointers in Each Node
@@ -249,6 +242,7 @@
 - (135) Candy
 - (316) Remove Duplicate Letter
 - (321) Create Maximum Number
+- (630) Course Schedule III
 - (646) Maximum Length of Pair Chain
 - (763) Partition Labels
 
@@ -261,6 +255,7 @@
 - (305) Number of Islands II
 - (323) Number of Connected Components in an Undirected Graph
 - (721) Accounts Merge
+- (924) Minimize Malware Spread
 
 ## Topological Sort
 - (207) Course Schedule
@@ -272,26 +267,32 @@
 ## Hash Table
 - (1) Two Sum
 - (49) Group Anagrams
+- (149) Max Points on a Line
 - (246) Strobogrammatic Number
 - (311) Sparse Matrix Multiplication
 - (325) Maximum Size Subarray Sum Equals k
 - (336) Palindrome Pairs
-- (535) Encode and Decode TinyURL
+- (347) Top K Frequent Elements
 - (387) First Unique Character in a String
-- (149) Max Points on a Line
+- (535) Encode and Decode TinyURL
+- (560) Subarray Sum Equals K
+- (609) Find Duplicate File in System
+- (811) Subdomain Visit Count
 - (819) Most Common Word
 
-## Sliding Window
-- (159) Longest Substring with At Most Two Distinct Characters
-- (904) Fruit Into Basket
 
 ## Trie
 - (208) Implement Trie (Prefix Tree)
+- (642) Design Search Autocomplete System
 
-## Min Heap
+## Heap
 - (218) The Skyline Problem
 - (253) Meeting Rooms II
+- (295) Find Median from Data Stream
 - (407) Trapping Rain Water II
+- (692) Top K Frequent Words
+- (716) Max Stack
+- (973) K Closest Points to Origin
 
 ## Deque
 - (239) Sliding Window Maximum
@@ -325,6 +326,9 @@
 - (606) Construct String from Binary Tree
 - (654) Maximum Binary Tree
 
+### Binary Tree
+- (236) Lowest Common Ancestor of a Binary Tree
+
 ## Array
 - (26) Remove Duplicates from Sorted Array
 - (80) Remove Duplicates from Sorted Array II
@@ -341,7 +345,6 @@
 - (121) Best Time to Buy and Sell Stock
 - (53) Maximum Subarray
 - (152) Maximum Product Subarray
-- (697) Degree of an Array
 - (189) Rotate Array
 - (73) Set Matrix Zeroes
 - (118) Pascal's Triangle
@@ -349,8 +352,11 @@
 - (238) Product of Array Except Self
 - (243) Shortest Word Distance
 - (277) Find the Celebrity
+- (560) Subarray Sum Equals K
 - (661) Image Smoother
 - (674) Longest Continuous Increasing Subsequence
+- (697) Degree of an Array
+- (755) Pour Water
 
 ## String
 - (28) Implement strStr()
@@ -358,4 +364,28 @@
 - (68) Text Justification
 - (125) Valid Palindrome
 - (161) One Edit Distance
+- (412) Fizz Buzz
 - (929) Unique Email Addresses
+- (7) Reverse Integer
+- (344) Reverse String
+- (541) Reverse String II
+- (151) Reverse Words in a String
+- (186) Reverse Words in a String II
+- (557) Reverse Words in a String III
+- (8) String to Integer (atoi)
+- (65) Valid Number
+- (13) Roman to Integer
+- (12) Integer to Roman
+- (273) Integer to English Words
+- (6) ZigZag Conversion
+- (14) Longest Common Prefix
+- (3) Longest Substring Without Repeating Char
+- (20) Valid Parentheses 
+- (5) Longest Palindromic Substring
+- (38) Count and Say
+- (10) Regular Expression Matching
+- (44) Wildcard Matching
+- (681) Next Closest Time
+
+
+

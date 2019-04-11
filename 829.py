@@ -1,3 +1,6 @@
+'''
+time: O(square_root(N))
+'''
 class Solution:
     ### (x + (m-1) + x)*m/2 = N
     ### xm + (m^2 - m)2 = N

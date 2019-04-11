@@ -47,8 +47,6 @@ class Codec:
 
 
 
-
-
         # Your Codec object will be instantiated and called as such:
         # codec = Codec()
         # codec.deserialize(codec.serialize(root))

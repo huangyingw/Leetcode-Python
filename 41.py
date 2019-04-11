@@ -1,3 +1,7 @@
+# 可以换如果 target <= len(nums)
+# 不可以换的时候找出nums[i] != i + 1, i+1就是最小的missing positive
+
+
 class Solution:
     def firstMissingPositive(self, nums):
         """

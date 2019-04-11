@@ -1,7 +1,9 @@
 """
-Time complexity: O(n logn)
-Space complexity: O(26)
+Time: O(n logn)
+Spac: O(26)
 """
+
+from collections import Counter
 
 
 class Solution(object):
@@ -11,11 +13,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        c = [0] * 26
-        for i in tasks:
-            c[ord(i)-ord('A')] += 1
-        c.sort()
-        i = 25
-        while i >= 0 and c[i] == c[25]:
-            i -= 1
-        return max(len(tasks), (c[25]-1)*(n+1)+25-i)
+        count = Counter(tasks)
+        most_frequent = count.most_common(1)[0][1]
+        add = 0
+        for k, v in count.most_common()[1:]:
+            if v == most_frequent:
+                add += 1
+        return max(len(tasks), (most_frequent - 1) * n + most_frequent + add)
+
+
+

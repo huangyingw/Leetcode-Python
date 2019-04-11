@@ -1,15 +1,9 @@
 class Solution:
-    def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
-        if not prices or len(prices) == 0: return 0
+    def maxProfit(self, prices: List[int]) -> int:
+        if not prices or len(prices) < 2: return 0
+        ret = 0
         buy = prices[0]
-        profit = 0
-        for i in range(1, len(prices)):
-            if prices[i] < buy:
-                buy = prices[i]
-            else:
-                profit = max(profit, prices[i]-buy)
-        return profit
+        for price in prices[1:]:
+            buy = min(price, buy)
+            ret = max(ret, price-buy)
+        return ret

@@ -48,10 +48,8 @@ class LRUCache(object):
             del self.dict[t.key]
 
     def _remove(self, node):
-        prev = node.prev
-        next = node.next
-        prev.next = next
-        next.prev = prev
+        node.prev.next = node.next
+        node.next.prev = node.prev
 
     def _add(self, node):
         prev = self.tail.prev
@@ -61,40 +59,24 @@ class LRUCache(object):
         self.tail.prev = node
 
 
-
 # from collections import OrderedDict
 #
-#
-# class LRUCache(object):
-#
-#     def __init__(self, capacity):
-#         """
-#         :type capacity: int
-#         """
+# class LRUCache:
+#     def __init__(self, capacity: int):
 #         self.capacity = capacity
-#         self.cache = OrderedDict()
+#         self.d = OrderedDict()
 #
-#     def get(self, key):
-#         """
-#         :type key: int
-#         :rtype: int
-#         """
-#         if key not in self.cache:
-#             return -1
-#         result = self.cache[key]
-#         del self.cache[key]
-#         self.cache[key] = result
-#         return result
+#     def get(self, key: int) -> int:
+#         if key in self.d:
+#             val = self.d[key]
+#             del self.d[key]
+#             self.d[key] = val
+#             return val
+#         return -1
 #
-#     def put(self, key, value):
-#         """
-#         :type key: int
-#         :type value: int
-#         :rtype: void
-#         """
-#         if key in self.cache:
-#             del self.cache[key]
-#         else:
-#             if len(self.cache.keys()) == self.capacity:
-#                 self.cache.popitem(last=False)
-#         self.cache[key] = value
+#     def put(self, key: int, value: int) -> None:
+#         if key in self.d:
+#             del self.d[key]
+#         self.d[key] = value
+#         if len(self.d.keys()) > self.capacity:
+#             self.d.popitem(last=False)

@@ -21,7 +21,7 @@ class Solution(object):
             curr = [False]
             for j in range(len(p)):
                 if p[j] == '*':
-                    curr.append(curr[j - 1] or curr[j] or (prev[j + 1] and p[j - 1] in (s[i], '.')))
+                    curr.append(curr[j - 1] or (prev[j + 1] and p[j - 1] in (s[i], '.')))
                 else:
                     curr.append(prev[j] and p[j] in (s[i], '.'))
             prev = curr
@@ -34,7 +34,7 @@ class Solution(object):
         # for i in range(len(p)):
         #     for j in range(len(s)):
         #         if p[i] == '*':
-        #             dp[i+1][j+1] = dp[i-1][j+1] or dp[i][j+1] or (dp[i+1][j] and p[i-1] in [s[j], '.'])
+        #             dp[i+1][j+1] = dp[i-1][j+1] or (dp[i+1][j] and p[i-1] in [s[j], '.'])
         #         else:
         #             dp[i+1][j+1] = dp[i][j] and p[i] in [s[j], '.']
         # return dp[-1][-1]

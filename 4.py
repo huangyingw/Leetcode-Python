@@ -11,7 +11,7 @@ class Solution:
         start, end, half = 0, m, (m + n + 1)//2
         A, B = nums1, nums2
         while start <= end:
-            i = start + (end - start) // 2
+            i = (start + end) // 2
             j = half - i
             if i < m and A[i] < B[j-1]:
                 start = i + 1

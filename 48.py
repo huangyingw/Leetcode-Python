@@ -1,16 +1,13 @@
-class Solution(object):
-    def rotate(self, matrix):
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
         """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
+        Do not return anything, modify matrix in-place instead.
         """
-        if not matrix or len(matrix[0]) < 1:
-            return
-        visited = []
+        visited = set()
         n = len(matrix)
         for i in range(n):
             for j in range(n):
                 if not visited or (i, j) not in visited:
                     matrix[i][j], matrix[j][n-i-1] = matrix[j][n-i-1], matrix[i][j]
-                    visited.append((i, j))
-                    visited.append((j, n-i-1))
+                    visited.add((i, j))
+                    visited.add((j, n-i-1))
