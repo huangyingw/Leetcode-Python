@@ -1,18 +1,18 @@
-[remote "origin"]
+[remote "clairett"]
     url = https://github.com/clairett/Leetcode-Python.git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-[remote "github"]
+    fetch = +refs/heads/*:refs/remotes/clairett/*
+[remote "origin"]
     url = git@github.com:huangyingw/Leetcode-Python.git
-    fetch = +refs/heads/*:refs/remotes/github/*
+    fetch = +refs/heads/*:refs/remotes/origin/*
 [push]
-    remote = github
-[gsync]
     remote = origin
+[gsync]
+    remote = clairett
     branch = master
 [merge]
 	allow = true
 [branch "dev"]
-    remote = github
+    remote = origin
     merge = refs/heads/dev
 [branch "master"]
     remote = origin
