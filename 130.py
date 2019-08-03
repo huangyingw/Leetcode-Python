@@ -1,20 +1,16 @@
 class Solution:
-    def solve(self, board):
+    def solve(self, board: List[List[str]]) -> None:
         """
-        :type board: List[List[str]]
-        :rtype: void Do not return anything, modify board in-place instead.
+        Do not return anything, modify board in-place instead.
         """
         if not board or not board[0]: return
         m, n = len(board), len(board[0])
-        # check borders first
-        for i in range(m):
-            self.check(i, 0, board, m, n)
-            if n > 0:
-                self.check(i, n - 1, board, m, n)
-        for j in range(n):
-            self.check(0, j, board, m, n)
-            if m > 0:
-                self.check(m - 1, j, board, m, n)
+        for i in range(n):
+            if board[0][i] == 'O': self.dfs(0, i, board)
+            if board[m - 1][i] == 'O': self.dfs(m - 1, i, board)
+        for i in range(1, m - 1):
+            if board[i][0] == 'O': self.dfs(i, 0, board)
+            if board[i][n - 1] == 'O': self.dfs(i, n - 1, board)
         for i in range(m):
             for j in range(n):
                 if board[i][j] == 'O':
@@ -24,10 +20,8 @@ class Solution:
                 if board[i][j] == '1':
                     board[i][j] = 'O'
 
-    def check(self, i, j, board, m, n):
-        if 0 <= i < m and 0 <= j < n and board[i][j] == 'O':
-            board[i][j] = '1'
-            self.check(i - 1, j, board, m, n)
-            self.check(i + 1, j, board, m, n)
-            self.check(i, j - 1, board, m, n)
-            self.check(i, j + 1, board, m, n)
+    def dfs(self, x, y, board):
+        board[x][y] = '1'
+        for i, j in [(x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)]:
+            if 0 <= i < len(board) and 0 <= j < len(board[0]) and board[i][j] == 'O':
+                self.dfs(i, j, board)

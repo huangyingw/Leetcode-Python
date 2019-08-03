@@ -1,93 +1,37 @@
-from collections import defaultdict
 import string
+from collections import defaultdict
 
 
 class Solution:
-    def findLadders(self, beginWord, endWord, wordList):
-        """
-        :type beginWord: str
-        :type endWord: str
-        :type wordList: List[str]
-        :rtype: List[List[str]]
-        """
-
-        def backtrack(path, word, result):
-            path.append(word)
-            if word == endWord:
-                result.append(path[:])
-            else:
-                for next_word in graph[word]:
-                    backtrack(path, next_word, result)
-            path.pop()
-
+    def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
         wordList = set(wordList)
-        if endWord not in wordList:
-            return []
-        graph = defaultdict(list)
-        this_level = set([endWord])
-        wordList.discard(endWord)
-        wordList.add(beginWord)
+        if endWord not in wordList: return []
+        result = []
+        tree = defaultdict(set)
+        queue = {beginWord}
+        wordList -= queue
         found = False
-        while this_level:
-            next_level = set()
-            for word in this_level:
+
+        while queue:
+            newQueue = set()
+            for word in queue:
                 for i in range(len(word)):
                     for c in string.ascii_lowercase:
-                        new_word = word[:i] + c + word[i + 1:]
-                        if new_word in wordList:
-                            graph[new_word].append(word)
-                            if new_word == beginWord:
-                                found = True
-                            else:
-                                next_level.add(new_word)
-            if found:
-                break
-            wordList -= next_level
-            this_level = next_level
+                        newWord = word[:i] + c + word[i + 1:]
+                        if newWord == endWord:
+                            found = True
+                        if newWord in wordList:
+                            tree[word].add(newWord)
+                            newQueue.add(newWord)
+            if found: break
+            queue = newQueue
+            wordList -= queue
         result = []
-        backtrack([], beginWord, result)
+        self.backtrack(beginWord, endWord, tree, [beginWord], result)
         return result
 
-
-# class Solution:
-#     def findLadders(self, beginWord, endWord, wordList):
-#         """
-#         :type beginWord: str
-#         :type endWord: str
-#         :type wordList: List[str]
-#         :rtype: List[List[str]]
-#         """
-#         wordList = set(wordList)
-#         if endWord not in wordList: return []
-#         tree = {}
-#         queue = set([beginWord])
-#         wordList.discard(beginWord)
-#         found = False
-#         while queue:
-#             new_queue = set()
-#             for word in queue:
-#                 for i in range(len(word)):
-#                     for c in string.ascii_lowercase:
-#                         new_word = word[:i] + c + word[i + 1:]
-#                         if new_word in wordList:
-#                             tree[word] = tree.get(word, []) + [new_word]
-#                             if new_word == endWord:
-#                                 found = True
-#                             else:
-#                                 new_queue.add(new_word)
-#             if found:
-#                 break
-#             queue = new_queue
-#             wordList -= new_queue
-#         result = []
-#         self.backtrack(result, beginWord, endWord, [beginWord], tree)
-#         return result
-#
-#     def backtrack(self, result, beginWord, endWord, path, tree):
-#         if beginWord == endWord:
-#             result.append(path)
-#             return
-#         if beginWord not in tree:
-#             return
-#         for word in tree[beginWord]:
-#             self.backtrack(result, word, endWord, path + [word], tree)
+    def backtrack(self, beginWord, endWord, tree, path, result):
+        if beginWord == endWord:
+            result.append(path)
+        for w in tree[beginWord]:
+            self.backtrack(w, endWord, tree, path + [w], result)

@@ -4,36 +4,24 @@ class MinStack:
         initialize your data structure here.
         """
         self.stack = []
-        self.min = float('inf')
 
-    def push(self, x):
-        """
-        :type x: int
-        :rtype: void
-        """
-        self.min = min(x, self.min)
-        self.stack.append((x, self.min))
+    def push(self, x: int) -> None:
+        if not self.stack:
+            self.stack.append((x, x))
+        else:
+            if self.stack[-1][1] <= x:
+                self.stack.append((x, self.stack[-1][1]))
+            else:
+                self.stack.append((x, x))
 
-    def pop(self):
-        """
-        :rtype: void
-        """
-        if self.stack:
-            self.stack.pop()
-        self.min = self.stack[-1][1] if self.stack else float('inf')
-        return
+    def pop(self) -> None:
+        self.stack.pop()
 
-    def top(self):
-        """
-        :rtype: int
-        """
+    def top(self) -> int:
         return self.stack[-1][0]
 
-    def getMin(self):
-        """
-        :rtype: int
-        """
-        return self.min
+    def getMin(self) -> int:
+        return self.stack[-1][1]
 
 
         # Your MinStack object will be instantiated and called as such:

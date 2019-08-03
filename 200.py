@@ -1,6 +1,27 @@
 # time and space complexity: O(mn)
 
 class Solution:
+    # updated union find
+    def numIslands(self, grid: List[List[str]]) -> int:
+        def find(x):
+            if UF[x] != x:
+                UF[x] = find(UF[x])
+            return UF[x]
+
+        def union(x, y):
+            UF[find(x)] = find(y)
+
+        if not grid or not grid[0]: return 0
+        m, n = len(grid), len(grid[0])
+        locs = {(i, j) for i in range(m) for j in range(n) if grid[i][j] == '1'}
+        UF = {n * i + j: n * i + j for (i, j) in locs}
+        for i, j in locs:
+            for x, y in [(i, j - 1), (i, j + 1), (i - 1, j), (i + 1, j)]:
+                if x < 0 or y < 0 or x >= m or y >= n or (x, y) not in locs:
+                    continue
+                union(n * i + j, n * x + y)
+        return len({find(x) for x in UF})
+
     # dfs
     def numIslands(self, grid):
         """

@@ -5,11 +5,7 @@ class Solution:
         def compute(op, second, first):
             if op == '+': return first + second
             if op == '-': return first - second
-            try:
-                if op == '/': return first // second
-            except:
-                print(nums)
-                print(ops)
+            if op == '/': return first // second
             if op == '*': return first * second
 
         def precede(curr, prev):

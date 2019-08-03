@@ -84,8 +84,9 @@
 - (84) Largest Rectangle in Histogram
 - (155) Min Stack
 - (224) Basic Calculator
+- (227) Basic Calculator II
 - (394) Decode String
-- (735) Asteroid Collision
+- (735) Asteroid Collision 
 - (772) Basic Caculator III
 
 ## Dynamic Programming
@@ -188,6 +189,7 @@
 - (4) Median of Two Sorted Arrays
 - (29) Divide Two Integers
 - (35) Search Insert Position
+- (50) Pow(x, n)
 - (69) Sqrt(x)
 - (74) Search a 2D Matrix
 - (33) Search in Rotated Sorted Array
@@ -197,7 +199,7 @@
 - (34) Find First and Last Position of Element in Sorted Array
 - (240) Search a 2D Matrix II
 - (278) First Bad Version
-- (50) Pow(x, n)
+- (300) Longest Increasing Subsequence
 - (528) Random Pick with Weight
 
 ## BFS
@@ -254,8 +256,10 @@
 - (261) Graph Valid Tree
 - (305) Number of Islands II
 - (323) Number of Connected Components in an Undirected Graph
+- (547) Friend Circle
 - (721) Accounts Merge
 - (924) Minimize Malware Spread
+- (947) Most Stones Removed with Same Row or Column
 
 ## Topological Sort
 - (207) Course Schedule

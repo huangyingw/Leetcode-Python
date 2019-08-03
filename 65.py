@@ -47,7 +47,7 @@ class Solution(object):
                 key = 'e'
             if i == '+' or i == '-':
                 key = 'sign'
-            if key not in states[current_state].keys():
+            else:
                 return False
             current_state = states[current_state][key]
         if current_state in [2, 5, 8, 9]:
