@@ -23,3 +23,40 @@ class Solution:
             tail.next = dummy.next
             dummy.next = tail
         return dummy.next
+
+
+# ## Recursion
+# class Solution:
+#     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+#         def getLength(l):
+#             count = 0
+#             while l:
+#                 l = l.next
+#                 count += 1
+#             return count
+#
+#         def addNode(ll1, ll2, diff):
+#             if not ll1 and not ll2: return None, 0
+#             if diff > 0:
+#                 newNode, newCarry = addNode(ll1.next, ll2, diff - 1)
+#                 newVal = ll1.val + newCarry
+#             else:
+#                 newNode, newCarry = addNode(ll1.next, ll2.next, diff)
+#                 newVal = ll1.val + ll2.val + newCarry
+#             carry, v = divmod(newVal, 10)
+#             curr = ListNode(v)
+#             curr.next = newNode
+#             return curr, carry
+#
+#         len1, len2 = getLength(l1), getLength(l2)
+#         if len1 < len2:
+#             l1, l2 = l2, l1
+#             len1, len2 = len2, len1
+#         if len1 == 0 or len2 == 0: return l1
+#         curr, carry = addNode(l1, l2, len1 - len2)
+#         if carry:
+#             head = ListNode(carry)
+#             head.next = curr
+#         else:
+#             head = curr
+#         return head
