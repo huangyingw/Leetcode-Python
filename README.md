@@ -201,6 +201,7 @@
 - (278) First Bad Version
 - (300) Longest Increasing Subsequence
 - (528) Random Pick with Weight
+- (1099) Two Sum Less Than K
 
 ## BFS
 - (116) Populating Next Right Pointers in Each Node
@@ -360,6 +361,8 @@
 - (661) Image Smoother
 - (674) Longest Continuous Increasing Subsequence
 - (697) Degree of an Array
+- (713) Subarray Product Less Than K
+- (724) Find Pivot Index
 - (755) Pour Water
 
 ## String
@@ -392,4 +395,6 @@
 - (681) Next Closest Time
 
 
-
+# Similarity
+- (560) Subarray Sum Equals K
+- (974) Subarray Sums Divisible by K
