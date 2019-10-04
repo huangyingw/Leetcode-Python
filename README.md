@@ -1,3 +1,13 @@
+# Based on Solution
+## Kth Problem
+- (378) Kth Smallest Element in a Sorted Matrix
+
+## Two Pointers of Same Direction
+- (3) Longest Substring Without Repeating Characters
+- (209) Minimum Size Subarray Sum
+- (340) Longest Substring with At Most K Distinct Characters
+
+
 # Algorithm
 
 ## Sort

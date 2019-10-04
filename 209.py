@@ -1,3 +1,5 @@
+# Time: O(n)
+
 class Solution:
     def minSubArrayLen(self, s, nums):
         """
@@ -5,13 +7,12 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        l, r = 0, 0
-        ret, sum = float('inf'), 0
-        while r < len(nums):
-            sum += nums[r]
-            r += 1
-            while sum >= s:
-                ret = min(ret, r - l)
-                sum -= nums[l]
+        total = l = 0
+        result = len(nums) + 1
+        for r in range(len(nums)):
+            total += nums[r]
+            while total >= s:
+                result = min(result, r - l + 1)
+                total -= nums[l]
                 l += 1
-        return 0 if ret == float('inf') else ret
+        return 0 if result == len(nums) + 1 else result
