@@ -1,42 +1,45 @@
-class WordDictionary(object):
+class TrieNode:
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
-        self.trie = {}
+        self.children = {}
+        self.isWord = False
+
+
+class WordDictionary:
+    """
+    @param: word: Adds a word into the data structure.
+    @return: nothing
+    """
+
+    def __init__(self):
+        self.root = TrieNode()
 
     def addWord(self, word):
-        """
-        Adds a word into the data structure.
-        :type word: str
-        :rtype: void
-        """
-        t = self.trie
+        node = self.root
         for c in word:
-            t = t.setdefault(c, {})
-        t[None] = None
+            if c not in node.children:
+                node.children[c] = TrieNode()
+            node = node.children[c]
+        node.isWord = True
+
+    """
+    @param: word: A word could contain the dot character '.' to represent any one letter.
+    @return: if the word is in the data structure.
+    """
 
     def search(self, word):
-        """
-        Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
-        :type word: str
-        :rtype: bool
-        """
-        return self.dfs(word, self.trie)
+        node = self.root
+        return self.helper(word, node)
 
-    def dfs(self, word, trie):
-        if word == '':
-            return None in trie
-        c = word[0]
-        if c != '.':
-            return c in trie and self.dfs(word[1:], trie[c])
-        return any(self.dfs(word[1:], kid) for kid in trie.values() if kid)
-
-
-
-
-
-        # Your WordDictionary object will be instantiated and called as such:
-        # obj = WordDictionary()
-        # obj.addWord(word)
-        # param_2 = obj.search(word)
+    def helper(self, word, node):
+        if len(word) == 0:
+            return node.isWord
+        curr = word[0]
+        if curr == '.':
+            for k in node.children:
+                if self.helper(word[1:], node.children[k]):
+                    return True
+        else:
+            if curr not in node.children:
+                return False
+            return self.helper(word[1:], node.children[curr])
+        return False

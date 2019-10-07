@@ -1,23 +1,37 @@
 class Solution:
-    def numIslands2(self, m: int, n: int, positions: List[List[int]]) -> List[int]:
-        def find(x):
-            while x != UF[x]:
-                UF[x] = UF[UF[x]]
-                x = UF[UF[x]]
-            return x
-
-        if len(positions) <= 1: return [len(positions)]
-        UF = {}
-        result, count = [], 0
-        for i, j in positions:
-            count += 1
-            curr = n * i + j
-            UF.setdefault(curr, curr)
-            for x, y in [(i + 1, j), (i - 1, j), (i, j - 1), (i, j + 1)]:
-                if 0 <= x < m and 0 <= y < n and n * x + y in UF:
-                    nn = find(n * x + y)
-                    if nn != UF[find(curr)]:
-                        UF[find(curr)] = nn
-                        count -= 1
-            result.append(count)
+    def numIslands2(self, m, n, positions):
+        """
+        :type m: int
+        :type n: int
+        :type positions: List[List[int]]
+        :rtype: List[int]
+        """
+        matrix = [[0 for i in range(n)] for j in range(m)]
+        roots, result, island = {}, [], 0
+        row, col = [-1, 0, 1, 0], [0, 1, 0, -1]
+        for position in positions:
+            x, y = position[0], position[1]
+            if matrix[x][y] == 1:
+                result.append(island)
+                continue
+            roots[x * n + y] = x * n + y
+            this_root = x * n + y
+            island += 1
+            for i in range(4):
+                nx, ny = x + row[i], y + col[i]
+                if 0 <= nx < m and 0 <= ny < n and matrix[nx][ny] == 1:
+                    nroot = self.find(nx * n + ny, roots)
+                    if nroot != this_root:
+                        roots[nroot] = this_root
+                        island -= 1
+            result.append(island)
+            matrix[x][y] = 1
         return result
+
+    def find(self, node, roots):
+        root = node
+        while root != roots[root]:
+            root = roots[root]
+        while node != root:
+            node, roots[node] = roots[node], root
+        return root

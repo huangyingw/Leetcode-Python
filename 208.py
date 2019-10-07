@@ -1,51 +1,51 @@
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.isWord = False
+
+
 class Trie:
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
-        self.children = {}
-        self.is_word = False
+        self.root = TrieNode()
+
+    """
+    @param: word: a word
+    @return: nothing
+    """
 
     def insert(self, word):
-        """
-        Inserts a word into the trie.
-        :type word: str
-        :rtype: void
-        """
-        curr = self
+        node = self.root
         for c in word:
-            if c not in curr.children:
-                curr.children[c] = Trie()
-            curr = curr.children[c]
-        curr.is_word = True
+            if c not in node.children:
+                node.children[c] = TrieNode()
+            node = node.children[c]
+        node.isWord = True
+
+    """
+    @param: word: A string
+    @return: if the word is in the trie.
+    """
 
     def search(self, word):
-        """
-        Returns if the word is in the trie.
-        :type word: str
-        :rtype: bool
-        """
-        curr = self
+        node = self.root
         for c in word:
-            if c not in curr.children:
+            if c not in node.children:
                 return False
-            curr = curr.children[c]
-        return True if curr.is_word else False
+            node = node.children[c]
+        return node.isWord
+
+    """
+    @param: prefix: A string
+    @return: if there is any word in the trie that starts with the given prefix.
+    """
 
     def startsWith(self, prefix):
-        """
-        Returns if there is any word in the trie that starts with the given prefix.
-        :type prefix: str
-        :rtype: bool
-        """
-        curr = self
+        node = self.root
         for c in prefix:
-            if c not in curr.children:
+            if c not in node.children:
                 return False
-            curr = curr.children[c]
+            node = node.children[c]
         return True
-
-
 
         # Your Trie object will be instantiated and called as such:
         # obj = Trie()

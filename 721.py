@@ -1,36 +1,33 @@
-from collections import defaultdict
-
 class Solution:
     def accountsMerge(self, accounts):
         """
         :type accounts: List[List[str]]
         :rtype: List[List[str]]
         """
-        owners, roots = {}, {}
+        result = []
+        roots, names = {}, {}
         for account in accounts:
-            for i in range(1, len(account)):
-                roots[account[i]] = account[i]
-                owners[account[i]] = account[0]
-
+            for i in account[1:]:
+                names[i] = account[0]
+                roots[i] = i
+        # merge
         for account in accounts:
-            root = self.findRoot(account[1], roots)
-            for i in range(1, len(account)):
-                roots[self.findRoot(account[i], roots)] = root
-
+            r = self.find(account[1], roots)
+            for i in account[2:]:
+                roots[self.find(i, roots)] = r
         unions = defaultdict(set)
         for account in accounts:
-            for i in range(1, len(account)):
-                root = self.findRoot(account[i], roots)
-                unions[root].add(account[i])
+            for i in account[1:]:
+                unions[self.find(i, roots)].add(i)
 
-        result = []
         for k, v in unions.items():
-            one_account = [owners[k]] + sorted(list(v))
-            result.append(one_account)
+            result.append([names[k]] + sorted(list(v)))
         return result
 
-    def findRoot(self, node, roots):
-        while roots[node] != node:
-            roots[node] = roots[roots[node]]
-            node = roots[roots[node]]
-        return node
+    def find(self, node, roots):
+        root = node
+        while root != roots[root]:
+            root = roots[root]
+        while node != root:
+            node, roots[node] = roots[node], root
+        return root

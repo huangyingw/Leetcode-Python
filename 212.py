@@ -1,32 +1,48 @@
-class Solution(object):
-    def findWords(self, board, words):
-        """
-        :type board: List[List[str]]
-        :type words: List[str]
-        :rtype: List[str]
-        """
-        if not board or not board[0]: return []
-        root = {}
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.word = None
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word):
+        node = self.root
+        for c in word:
+            if c not in node.children:
+                node.children[c] = TrieNode()
+            node = node.children[c]
+        node.word = word
+
+
+class Solution:
+    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+        result = []
+        trie = Trie()
         for word in words:
-            curr = root
-            for c in word:
-                curr = curr.setdefault(c, {})
-            curr['#'] = '#'
-        self.visited = [[False] * len(board[0]) for _ in range(len(board))]
-        self.result = set()
+            trie.insert(word)
         for i in range(len(board)):
             for j in range(len(board[0])):
-                self.dfs(board, i, j, root, '')
-        return list(self.result)
+                self.search(board, i, j, trie.root, result)
+        return result
 
-    def dfs(self, board, x, y, trie, s):
-        if '#' in trie:
-            self.result.add(s)
-        if x < 0 or x >= len(board) or y < 0 or y >= len(board[0]):
-            return
-        if board[x][y] in trie and not self.visited[x][y]:
-            self.visited[x][y] = True
-            for i, j in [(-1, 0), (0, -1), (1, 0), (0, 1)]:
-                xx, yy = x + i, y + j
-                self.dfs(board, xx, yy, trie[board[x][y]], s + board[x][y])
-            self.visited[x][y] = False
+    def search(self, board, x, y, node, result):
+        dx = [-1, 1, 0, 0]
+        dy = [0, 0, -1, 1]
+        if board[x][y] not in node.children: return
+        child = node.children[board[x][y]]
+        if child.word:
+            if child.word not in result:
+                result.append(child.word)
+        tmp = board[x][y]
+        board[x][y] = 0
+        for i in range(4):
+            nx, ny = x + dx[i], y + dy[i]
+            if self.isValid(board, nx, ny):
+                self.search(board, nx, ny, child, result)
+        board[x][y] = tmp
+
+    def isValid(self, board, x, y):
+        return 0 <= x < len(board) and 0 <= y < len(board[0]) and board[x][y] != 0

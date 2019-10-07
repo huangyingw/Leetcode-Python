@@ -1,12 +1,24 @@
 # Based on Solution
 ## Kth Problem
 - (378) Kth Smallest Element in a Sorted Matrix
+- (Lintcode 465) Kth Smallest Sum in Two Sorted Arrays
 
 ## Two Pointers of Same Direction
 - (3) Longest Substring Without Repeating Characters
 - (209) Minimum Size Subarray Sum
 - (340) Longest Substring with At Most K Distinct Characters
 
+## Union Find
+- (261) Graph Valid Tree
+- (305) Number of Island II
+- (Lintcode 590) Connecting Graph II
+- (Lintcode 629) Minimum Spanning Tree
+- (721) Accounts Merge
+
+## Trie
+- (208) Implement Trie (Prefix Tree)
+- (211) Add and Search Word - Data structure design
+- (212) Word Search II
 
 # Algorithm
 
@@ -261,16 +273,6 @@
 
 ## Divide and Conquer
 - (95) Unique Binary Search Trees II
-
-## Union Find
-- (128) Longest Consecutive Sequence
-- (261) Graph Valid Tree
-- (305) Number of Islands II
-- (323) Number of Connected Components in an Undirected Graph
-- (547) Friend Circle
-- (721) Accounts Merge
-- (924) Minimize Malware Spread
-- (947) Most Stones Removed with Same Row or Column
 
 ## Topological Sort
 - (207) Course Schedule

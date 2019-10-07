@@ -1,18 +1,24 @@
+from typing import List
+
+
 class Solution:
     def validTree(self, n: int, edges: List[List[int]]) -> bool:
-        UF = [i for i in range(n)]
-        count = n
+        roots = [i for i in range(n)]
+        connect = n
         for edge in edges:
-            left, right = self.find(edge[0], UF), self.find(edge[1], UF)
+            left, right = self.find(edge[0], roots), self.find(edge[1], roots)
             if left == right: return False
-            count -= 1
-            UF[right] = left
-        return count == 1
+            roots[right] = left
+            connect -= 1
+        return connect == 1
 
-    def find(self, node, UF):
-        if UF[node] != node:
-            UF[node] = self.find(UF[node], UF)
-        return UF[node]
+    def find(self, node, roots):
+        root = node
+        while root != roots[root]:
+            root = roots[root]
+        while node != root:
+            node, roots[node] = roots[node], root
+        return root
 
 
 # class Solution:
