@@ -20,8 +20,22 @@
 - (211) Add and Search Word - Data structure design
 - (212) Word Search II
 
-# Algorithm
+## Stack
+- (155) Min Stack
+- (394) Decode String
+- (654) Maximum Binary Tree
 
+## Monotone Stack
+- (42) Trapping Rain Water
+- (84) Largest Rectangle in Histogram
+- (85) Maximal Rectangle
+
+## Two Heaps - minHeap and maxHeap
+- (295) Find Median from Data Stream
+- (480) Sliding Window Median
+
+
+# Algorithm
 ## Sort
 - (75) Sort Colors
 

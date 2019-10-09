@@ -2,14 +2,19 @@ from typing import List
 
 
 class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:
-        heights.append(0)
-        result = 0
+    def largestRectangleArea(self, heights):
+        """
+        :type heights: List[int]
+        :rtype: int
+        """
         stack = [-1]
-        for i in range(len(heights)):
-            while heights[i] < heights[stack[-1]]:
-                h = heights[stack.pop()]
-                w = i - stack[-1] - 1
-                result = max(result, h*w)
-            stack.append(i)
+        heights.append(-1)
+        result, i = 0, 0
+        while i < len(heights):
+            if heights[i] >= heights[stack[-1]]:
+                stack.append(i)
+                i += 1
+            else:
+                pre = stack.pop()
+                result = max(result, heights[pre]*(i-1-stack[-1]))
         return result
