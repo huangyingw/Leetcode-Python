@@ -20,8 +20,32 @@
 - (211) Add and Search Word - Data structure design
 - (212) Word Search II
 
-# Algorithm
+## Stack
+- (155) Min Stack
+- (394) Decode String
+- (654) Maximum Binary Tree
 
+## Monotone Stack
+- (42) Trapping Rain Water
+- (84) Largest Rectangle in Histogram
+- (85) Maximal Rectangle
+
+## Two Heaps - minHeap and maxHeap
+- (295) Find Median from Data Stream
+- (480) Sliding Window Median
+
+## Min Heap
+- (407) Trapping Rain Water II
+
+## Binary Search
+- (69) Sqrt(x)
+- (Lintcode 183) Wood Cut
+- (Lintcode 437)
+- (Lintcode 586) Sqrt(x) II
+
+
+
+# Algorithm
 ## Sort
 - (75) Sort Colors
 
@@ -212,7 +236,6 @@
 - (29) Divide Two Integers
 - (35) Search Insert Position
 - (50) Pow(x, n)
-- (69) Sqrt(x)
 - (74) Search a 2D Matrix
 - (33) Search in Rotated Sorted Array
 - (81) Search in Rotated Sorted Array II
