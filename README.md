@@ -34,6 +34,16 @@
 - (295) Find Median from Data Stream
 - (480) Sliding Window Median
 
+## Min Heap
+- (407) Trapping Rain Water II
+
+## Binary Search
+- (69) Sqrt(x)
+- (Lintcode 183) Wood Cut
+- (Lintcode 437)
+- (Lintcode 586) Sqrt(x) II
+
+
 
 # Algorithm
 ## Sort
@@ -226,7 +236,6 @@
 - (29) Divide Two Integers
 - (35) Search Insert Position
 - (50) Pow(x, n)
-- (69) Sqrt(x)
 - (74) Search a 2D Matrix
 - (33) Search in Rotated Sorted Array
 - (81) Search in Rotated Sorted Array II
