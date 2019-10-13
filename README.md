@@ -37,12 +37,25 @@
 ## Min Heap
 - (407) Trapping Rain Water II
 
+## Sweep Line
+- (253) Meeting Rooms II
+- (Lintcode 391) Number of Airplanes in the Skyline
+
 ## Binary Search
+- (29) Divide Two Integers
 - (69) Sqrt(x)
+- (287) Find the Duplicate Number
+- (644) Maximum Average Subarray II
 - (Lintcode 183) Wood Cut
-- (Lintcode 437)
+- (Lintcode 437) Copy Books
 - (Lintcode 586) Sqrt(x) II
 
+## Deque
+- (239) Sliding Window Maximum
+- (346) Moving Average from Data Stream
+
+## Dynamic Programming
+-
 
 
 # Algorithm
@@ -333,10 +346,6 @@
 - (692) Top K Frequent Words
 - (716) Max Stack
 - (973) K Closest Points to Origin
-
-## Deque
-- (239) Sliding Window Maximum
-- (346) Moving Average from Data Stream
 
 ## Tree
 - (94) Binary Tree Inorder Traversal
