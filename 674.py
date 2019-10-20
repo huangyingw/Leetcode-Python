@@ -1,16 +1,12 @@
 class Solution:
-    def findLengthOfLCIS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+    def findLengthOfLCIS(self, nums: List[int]) -> int:
         if not nums: return 0
-        curr = 1
-        result = 1
+        if len(nums) < 2: return len(nums)
+        result, increase = 1, 1
         for i in range(1, len(nums)):
             if nums[i] > nums[i-1]:
-                curr += 1
-                result = max(curr, result)
+                increase += 1
             else:
-                curr = 1
+                increase = 1
+            result = max(result, increase)
         return result
