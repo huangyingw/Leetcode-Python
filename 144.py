@@ -15,3 +15,14 @@ class Solution:
         if root:
             return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
         return []
+
+        # iterative
+        # result = []
+        # stack = [root]
+        # while stack:
+        #     curr = stack.pop()
+        #     if curr:
+        #         result.append(curr.val)
+        #         stack.append(curr.right)
+        #         stack.append(curr.left)
+        # return result

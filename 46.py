@@ -3,7 +3,6 @@ Time complexity: O(N*N!)
 '''
 
 
-
 class Solution:
     def permute(self, nums):
         """
