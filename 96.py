@@ -1,3 +1,6 @@
+# Time: O(n^2)
+# Space: O(n)
+
 class Solution:
     def numTrees(self, n):
         """
